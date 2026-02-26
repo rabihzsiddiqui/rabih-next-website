@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section
@@ -22,6 +24,19 @@ export default function Hero() {
       />
 
       <div className="max-w-4xl mx-auto px-6 py-32 text-center">
+        {/* Profile photo */}
+        <div className="flex justify-center mb-8">
+          <Image
+            src="/profile.jpg"
+            alt="Rabih Siddiqui"
+            width={180}
+            height={180}
+            quality={100}
+            className="rounded-full ring-2 ring-indigo-500/50 ring-offset-4 ring-offset-zinc-950 object-cover"
+            priority
+          />
+        </div>
+
         {/* Eyebrow label */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-sm font-medium mb-8">
           <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse" />
@@ -41,9 +56,10 @@ export default function Hero() {
           Cognitive Science graduate from{" "}
           <span className="text-zinc-200 font-medium">UC San Diego</span> with
           hands-on experience in{" "}
-          <span className="text-zinc-200 font-medium">product testing</span> and{" "}
-          <span className="text-zinc-200 font-medium">UX research</span> at
-          companies like Google and Meta.
+          <span className="text-zinc-200 font-medium">product testing</span> and
+          participation in user research through{" "}
+          <span className="text-zinc-200 font-medium">Meta</span> and{" "}
+          <span className="text-zinc-200 font-medium">Google</span>.
         </p>
 
         {/* CTA Buttons */}
