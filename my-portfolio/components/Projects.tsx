@@ -73,6 +73,7 @@ const projects: Project[] = [
     gradient: "from-indigo-500/20 to-blue-500/20",
     accentBorder: "hover:border-indigo-500/40",
     accentGlow: "group-hover:shadow-indigo-500/10",
+    githubUrl: "https://github.com/rabihzsiddiqui/Restaurant_Rating_Analysis",
   },
   {
     title: "V.I.S.A — Visual Impairment & Sensory Aid",
