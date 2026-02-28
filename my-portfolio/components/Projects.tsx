@@ -160,7 +160,14 @@ export default function Projects() {
 
               {/* Title */}
               <h3 className="text-lg font-semibold text-white mb-3 leading-snug group-hover:text-indigo-300 transition-colors duration-200">
-                {project.titleNode ?? project.title}
+                {project.titleNode ?? (() => {
+                  const titleHref = project.liveUrl ?? project.githubUrl ?? project.slidesUrl;
+                  return titleHref ? (
+                    <a href={titleHref} target="_blank" rel="noopener noreferrer">
+                      {project.title}
+                    </a>
+                  ) : project.title;
+                })()}
               </h3>
 
               {/* Description */}
