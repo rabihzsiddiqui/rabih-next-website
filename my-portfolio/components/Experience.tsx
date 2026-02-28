@@ -45,7 +45,7 @@ const badgeColors: Record<string, string> = {
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 bg-zinc-900/40">
+    <section id="experience" className="py-24 bg-zinc-950">
       <div className="max-w-4xl mx-auto px-6">
         {/* Section header */}
         <div className="mb-16">
